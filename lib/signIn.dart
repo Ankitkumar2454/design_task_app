@@ -8,7 +8,11 @@ class SignIn extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Container(
-          color: Color(0xff410056),
+          decoration: const BoxDecoration(
+            color: Color(0xff410056),
+            image: DecorationImage(
+                image: AssetImage("assets/BG.png"), fit: BoxFit.cover),
+          ),
           child: Column(
             children: [
               SizedBox(
@@ -38,7 +42,7 @@ class SignIn extends StatelessWidget {
                         children: [
                           Expanded(
                             child: Card(
-                              color: Color(0xffF9F9F9),
+                              color: Color(0xffD8D8D8),
                               child: Padding(
                                 padding: EdgeInsets.symmetric(
                                   horizontal: 30,
@@ -55,7 +59,7 @@ class SignIn extends StatelessWidget {
                           ),
                           Expanded(
                             child: Card(
-                              color: Color(0xffD8D8D8),
+                              color: Color(0xffF9F9F9),
                               child: Padding(
                                 padding: EdgeInsets.symmetric(
                                   horizontal: 30,
@@ -113,6 +117,14 @@ class SignIn extends StatelessWidget {
                     ],
                   ),
                 ),
+              ),
+              SizedBox(
+                height: 80,
+              ),
+              Image.asset(
+                'assets/science.png',
+                height: 40,
+                scale: 0.8,
               ),
             ],
           ),

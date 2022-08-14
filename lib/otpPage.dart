@@ -8,7 +8,11 @@ class OtpPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Container(
-          color: Color(0xff410056),
+          decoration: const BoxDecoration(
+            color: Color(0xff410056),
+            image: DecorationImage(
+                image: AssetImage("assets/BG.png"), fit: BoxFit.cover),
+          ),
           child: Column(
             children: [
               SizedBox(
@@ -78,8 +82,9 @@ class OtpPage extends StatelessWidget {
                       Text(
                         "Enter the OTP Recieved ",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
+                          color: Color(0xff410056),
                         ),
                       ),
                       SizedBox(
@@ -160,6 +165,17 @@ class OtpPage extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 90,
+              ),
+              Align(
+                alignment: Alignment.bottomCenter,
+                child: Image.asset(
+                  'assets/science.png',
+                  height: 40,
+                  scale: 0.8,
+                ),
+              ),
             ],
           ),
         ),
@@ -178,11 +194,10 @@ class Otp_box extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
+      height: 50,
       width: 40,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.black),
-        // color: Colors.orange,
+        border: Border.all(color: Color(0Xff4D3057)),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Padding(

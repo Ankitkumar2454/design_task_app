@@ -30,48 +30,56 @@ class HomePage extends StatelessWidget {
           ),
         ),
         body: SingleChildScrollView(
-          child: Column(
-            children: [
-              HeaderHome(),
-              SizedBox(
-                height: 12,
-              ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Column(
-                  children: [
-                    ContentHomePage(
-                      name: 'Elephant \nToothpaste',
-                      imgPath: 'assets/elephants.png',
-                    ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    ContentHomePage(
-                      name: 'Chemical \nChameleon',
-                      imgPath: 'assets/chemical.png',
-                    ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    ContentHomePage(
-                      name: 'Lemon \nBattery',
-                      imgPath: 'assets/lemon.png',
-                    ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    ContentHomePage(
-                      name: 'Elephant \nToothpaste',
-                      imgPath: 'assets/elephants.png',
-                    ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                  ],
+          child: Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/BG.png"),
+                  fit: BoxFit.cover,
+                  opacity: 0.8),
+            ),
+            child: Column(
+              children: [
+                HeaderHome(),
+                SizedBox(
+                  height: 12,
                 ),
-              ),
-            ],
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Column(
+                    children: [
+                      ContentHomePage(
+                        name: 'Elephant \nToothpaste',
+                        imgPath: 'assets/elephants.png',
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      ContentHomePage(
+                        name: 'Chemical \nChameleon',
+                        imgPath: 'assets/chemical.png',
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      ContentHomePage(
+                        name: 'Lemon \nBattery',
+                        imgPath: 'assets/lemon.png',
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      ContentHomePage(
+                        name: 'Elephant \nToothpaste',
+                        imgPath: 'assets/elephants.png',
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
         bottomNavigationBar: ClipRRect(
@@ -304,16 +312,13 @@ class HeaderHome extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
-            height: 10,
-          ),
           Padding(
-            padding: EdgeInsets.only(left: 10.0),
+            padding: EdgeInsets.only(left: 4.0),
             child: Row(
               children: [
                 Container(
-                  height: 40,
-                  width: 100,
+                  height: 35,
+                  width: 80,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(4),
@@ -336,7 +341,7 @@ class HeaderHome extends StatelessWidget {
                       Text(
                         'Filter',
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 17,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -344,12 +349,10 @@ class HeaderHome extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(5.0),
                   child: Text(
                     '|',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
                   ),
                 ),
                 Container(
@@ -362,7 +365,7 @@ class HeaderHome extends StatelessWidget {
                     child: Text(
                       'Trending',
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 12,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
@@ -370,13 +373,52 @@ class HeaderHome extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  width: 5,
+                  width: 8,
                 ),
                 HeaderContainer(name: 'All', colour: Colors.white),
                 SizedBox(
-                  width: 5,
+                  width: 8,
                 ),
                 HeaderContainer(name: 'Physics', colour: Colors.white),
+                SizedBox(
+                  width: 12,
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Color(0xff410056)),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'chemis',
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xff410056),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(4),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                  ),
+                  child: Center(child: Icon(Icons.arrow_forward)),
+                ),
               ],
             ),
           ),
@@ -404,7 +446,7 @@ class HeaderContainer extends StatelessWidget {
         child: Text(
           name,
           style: TextStyle(
-            fontSize: 18,
+            fontSize: 12,
             fontWeight: FontWeight.bold,
             color: Color(0xff410056),
           ),

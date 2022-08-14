@@ -8,7 +8,11 @@ class Register extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Container(
-          color: Color(0xff410056),
+          decoration: const BoxDecoration(
+            color: Color(0xff410056),
+            image: DecorationImage(
+                image: AssetImage("assets/BG.png"), fit: BoxFit.cover),
+          ),
           child: Column(
             children: [
               SizedBox(
@@ -101,7 +105,7 @@ class Register extends StatelessWidget {
                       Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          color: Colors.brown,
+                          color: Color(0xff410056),
                         ),
                         height: 50,
                         width: 150,
@@ -132,7 +136,9 @@ class Register extends StatelessWidget {
                         padding: EdgeInsets.symmetric(horizontal: 20.0),
                         child: Container(
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black),
+                            border: Border.all(
+                              color: Color(0xff410056),
+                            ),
                             borderRadius: BorderRadius.circular(20),
                             color: Colors.white,
                           ),
@@ -160,7 +166,9 @@ class Register extends StatelessWidget {
                         padding: EdgeInsets.symmetric(horizontal: 20.0),
                         child: Container(
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black),
+                            border: Border.all(
+                              color: Color(0xff410056),
+                            ),
                             borderRadius: BorderRadius.circular(20),
                             color: Colors.white,
                           ),
@@ -188,12 +196,10 @@ class Register extends StatelessWidget {
                   ),
                 ),
               ),
-              Text(
-                'Made in with Science',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                ),
+              Image.asset(
+                'assets/science.png',
+                height: 40,
+                scale: 0.8,
               ),
             ],
           ),
