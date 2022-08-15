@@ -13,120 +13,122 @@ class SignIn extends StatelessWidget {
             image: DecorationImage(
                 image: AssetImage("assets/BG.png"), fit: BoxFit.cover),
           ),
-          child: Column(
-            children: [
-              SizedBox(
-                height: 80,
-              ),
-              Text(
-                'LAB N BOX',
-                style: TextStyle(
-                  fontSize: 50,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 80,
                 ),
-              ),
-              SizedBox(
-                height: 80,
-              ),
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color(0xFFFFFFFF),
-                    borderRadius: BorderRadius.circular(12),
+                Text(
+                  'LAB N BOX',
+                  style: TextStyle(
+                    fontSize: 50,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
                   ),
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Expanded(
-                            child: Card(
-                              color: Color(0xffD8D8D8),
-                              child: Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 30,
-                                  vertical: 20,
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    "Sign In",
-                                    style: TextStyle(fontSize: 20),
+                ),
+                SizedBox(
+                  height: 80,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFFFFFFFF),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Card(
+                                color: Color(0xffD8D8D8),
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 30,
+                                    vertical: 20,
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Sign In",
+                                      style: TextStyle(fontSize: 20),
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
-                          ),
-                          Expanded(
-                            child: Card(
-                              color: Color(0xffF9F9F9),
-                              child: Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 30,
-                                  vertical: 20,
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    "Sign Up",
-                                    style: TextStyle(fontSize: 20),
+                            Expanded(
+                              child: Card(
+                                color: Color(0xffF9F9F9),
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 30,
+                                    vertical: 20,
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Sign Up",
+                                      style: TextStyle(fontSize: 20),
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 30,
-                      ),
-                      Column(
-                        children: [
-                          Box(name: 'Registered Email ID/ Phone Number'),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Box(name: 'Enter your password'),
-                          SizedBox(
-                            height: 15,
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Color(0xff410056),
+                          ],
                         ),
-                        height: 65,
-                        width: 150,
-                        child: Center(
-                          child: Text(
-                            'Sign In',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
+                        SizedBox(
+                          height: 30,
+                        ),
+                        Column(
+                          children: [
+                            Box(name: 'Registered Email ID/ Phone Number'),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Box(name: 'Enter your password'),
+                            SizedBox(
+                              height: 15,
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Color(0xff410056),
+                          ),
+                          height: 65,
+                          width: 150,
+                          child: Center(
+                            child: Text(
+                              'Sign In',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 40,
-                      ),
-                    ],
+                        SizedBox(
+                          height: 40,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              SizedBox(
-                height: 80,
-              ),
-              Image.asset(
-                'assets/science.png',
-                height: 40,
-                scale: 0.8,
-              ),
-            ],
+                SizedBox(
+                  height: 80,
+                ),
+                Image.asset(
+                  'assets/science.png',
+                  height: 40,
+                  scale: 0.8,
+                ),
+              ],
+            ),
           ),
         ),
         floatingActionButton: FloatingActionButton(

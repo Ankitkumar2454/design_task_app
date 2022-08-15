@@ -13,195 +13,197 @@ class Register extends StatelessWidget {
             image: DecorationImage(
                 image: AssetImage("assets/BG.png"), fit: BoxFit.cover),
           ),
-          child: Column(
-            children: [
-              SizedBox(
-                height: 10,
-              ),
-              Text(
-                'LAB N BOX',
-                style: TextStyle(
-                  fontSize: 50,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 10,
                 ),
-              ),
-              SizedBox(
-                height: 12,
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                  horizontal: 25,
-                  vertical: 10,
-                ),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color(0xffFFFFFF),
-                    borderRadius: BorderRadius.circular(15),
+                Text(
+                  'LAB N BOX',
+                  style: TextStyle(
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
                   ),
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Expanded(
-                            child: Card(
-                              color: Color(0xffFEFEFE),
-                              child: Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 30,
-                                  vertical: 20,
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    "Sign In",
-                                    style: TextStyle(fontSize: 20),
+                ),
+                SizedBox(
+                  height: 12,
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 25,
+                    vertical: 10,
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xffFFFFFF),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Card(
+                                color: Color(0xffFEFEFE),
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 30,
+                                    vertical: 20,
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Sign In",
+                                      style: TextStyle(fontSize: 20),
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
-                          ),
-                          Expanded(
-                            child: Card(
-                              color: Color(0xffD8D8D8),
-                              child: Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 30,
-                                  vertical: 20,
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    "Sign Up",
-                                    style: TextStyle(fontSize: 20),
+                            Expanded(
+                              child: Card(
+                                color: Color(0xffD8D8D8),
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 30,
+                                    vertical: 20,
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Sign Up",
+                                      style: TextStyle(fontSize: 20),
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Column(
-                        children: [
-                          BoxName(name: 'Your Name'),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          BoxName(name: 'enter your email'),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          BoxName(name: 'Your Phone number'),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          BoxName(name: 'Password'),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Color(0xff410056),
+                          ],
                         ),
-                        height: 50,
-                        width: 150,
-                        child: Center(
-                          child: Text(
-                            'Register',
-                            style: TextStyle(
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Column(
+                          children: [
+                            BoxName(name: 'Your Name'),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            BoxName(name: 'enter your email'),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            BoxName(name: 'Your Phone number'),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            BoxName(name: 'Password'),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Color(0xff410056),
+                          ),
+                          height: 50,
+                          width: 150,
+                          child: Center(
+                            child: Text(
+                              'Register',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 12,
+                        ),
+                        Text(
+                          '(or)',
+                          style: TextStyle(
+                            color: Colors.grey[350],
+                            fontSize: 20,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 12,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 20.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Color(0xff410056),
+                              ),
+                              borderRadius: BorderRadius.circular(20),
                               color: Colors.white,
-                              fontSize: 20,
+                            ),
+                            height: 50,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Image.asset(
+                                  'assets/google.webp',
+                                  height: 40,
+                                ),
+                                Text(
+                                  'Continue with google',
+                                  style: TextStyle(
+                                      color: Colors.black, fontSize: 20),
+                                ),
+                              ],
                             ),
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 12,
-                      ),
-                      Text(
-                        '(or)',
-                        style: TextStyle(
-                          color: Colors.grey[350],
-                          fontSize: 20,
+                        SizedBox(
+                          height: 10,
                         ),
-                      ),
-                      SizedBox(
-                        height: 12,
-                      ),
-                      Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 20.0),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Color(0xff410056),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 20.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Color(0xff410056),
+                              ),
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.white,
                             ),
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.white,
-                          ),
-                          height: 50,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Image.asset(
-                                'assets/google.webp',
-                                height: 40,
-                              ),
-                              Text(
-                                'Continue with google',
-                                style: TextStyle(
-                                    color: Colors.black, fontSize: 20),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 20.0),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Color(0xff410056),
+                            height: 50,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Image.asset(
+                                  'assets/face.png',
+                                  height: 40,
+                                ),
+                                Text(
+                                  'Continue with Facebook',
+                                  style: TextStyle(
+                                      color: Colors.black, fontSize: 20),
+                                ),
+                              ],
                             ),
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.white,
-                          ),
-                          height: 50,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Image.asset(
-                                'assets/face.png',
-                                height: 40,
-                              ),
-                              Text(
-                                'Continue with Facebook',
-                                style: TextStyle(
-                                    color: Colors.black, fontSize: 20),
-                              ),
-                            ],
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 30,
-                      ),
-                    ],
+                        SizedBox(
+                          height: 30,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              Image.asset(
-                'assets/science.png',
-                height: 40,
-                scale: 0.8,
-              ),
-            ],
+                Image.asset(
+                  'assets/science.png',
+                  height: 40,
+                  scale: 0.8,
+                ),
+              ],
+            ),
           ),
         ),
         floatingActionButton: FloatingActionButton(
