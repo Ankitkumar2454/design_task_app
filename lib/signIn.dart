@@ -17,9 +17,10 @@ class SignIn extends StatelessWidget {
             child: Column(
               children: [
                 SizedBox(
-                  height: 80,
+                  // height: 80,
+                  height: MediaQuery.of(context).size.height * 0.1,
                 ),
-                Text(
+                const Text(
                   'LAB N BOX',
                   style: TextStyle(
                     fontSize: 50,
@@ -28,7 +29,8 @@ class SignIn extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 80,
+                  // height: 80,
+                  height: MediaQuery.of(context).size.height * 0.1,
                 ),
                 Padding(
                   padding: const EdgeInsets.all(20.0),
@@ -46,8 +48,11 @@ class SignIn extends StatelessWidget {
                                 color: Color(0xffD8D8D8),
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(
-                                    horizontal: 30,
-                                    vertical: 20,
+                                    horizontal:
+                                        MediaQuery.of(context).size.width * 0.1,
+                                    vertical:
+                                        MediaQuery.of(context).size.height *
+                                            0.023,
                                   ),
                                   child: Center(
                                     child: Text(
@@ -63,8 +68,11 @@ class SignIn extends StatelessWidget {
                                 color: Color(0xffF9F9F9),
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(
-                                    horizontal: 30,
-                                    vertical: 20,
+                                    horizontal:
+                                        MediaQuery.of(context).size.width * 0.1,
+                                    vertical:
+                                        MediaQuery.of(context).size.height *
+                                            0.023,
                                   ),
                                   child: Center(
                                     child: Text(
@@ -78,30 +86,31 @@ class SignIn extends StatelessWidget {
                           ],
                         ),
                         SizedBox(
-                          height: 30,
+                          // height: 30,
+                          height: MediaQuery.of(context).size.height * 0.05,
                         ),
                         Column(
                           children: [
                             Box(name: 'Registered Email ID/ Phone Number'),
                             SizedBox(
-                              height: 15,
+                              height: MediaQuery.of(context).size.width * 0.05,
                             ),
                             Box(name: 'Enter your password'),
                             SizedBox(
-                              height: 15,
+                              height: MediaQuery.of(context).size.width * 0.05,
                             ),
                           ],
                         ),
                         SizedBox(
-                          height: 20,
+                          height: MediaQuery.of(context).size.height * 0.03,
                         ),
                         Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
                             color: Color(0xff410056),
                           ),
-                          height: 65,
-                          width: 150,
+                          height: MediaQuery.of(context).size.height * 0.075,
+                          width: MediaQuery.of(context).size.width * 0.4,
                           child: Center(
                             child: Text(
                               'Sign In',
@@ -113,18 +122,18 @@ class SignIn extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          height: 40,
+                          height: MediaQuery.of(context).size.height * 0.05,
                         ),
                       ],
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 80,
+                  height: MediaQuery.of(context).size.height * 0.1,
                 ),
                 Image.asset(
                   'assets/science.png',
-                  height: 40,
+                  height: MediaQuery.of(context).size.height * 0.05,
                   scale: 0.8,
                 ),
               ],
@@ -148,8 +157,9 @@ class Box extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
-      width: 320,
+      // height: 60,
+      height: MediaQuery.of(context).size.height * 0.07,
+      width: MediaQuery.of(context).size.width * 0.86,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(4),

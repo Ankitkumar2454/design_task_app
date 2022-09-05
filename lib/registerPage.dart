@@ -17,7 +17,7 @@ class Register extends StatelessWidget {
             child: Column(
               children: [
                 SizedBox(
-                  height: 10,
+                  height: MediaQuery.of(context).size.height * 0.01,
                 ),
                 Text(
                   'LAB N BOX',
@@ -28,12 +28,12 @@ class Register extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 12,
+                  height: MediaQuery.of(context).size.height * 0.02,
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(
-                    horizontal: 25,
-                    vertical: 10,
+                    horizontal: MediaQuery.of(context).size.height * 0.03,
+                    vertical: MediaQuery.of(context).size.height * 0.01,
                   ),
                   child: Container(
                     decoration: BoxDecoration(
@@ -49,10 +49,13 @@ class Register extends StatelessWidget {
                                 color: Color(0xffFEFEFE),
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(
-                                    horizontal: 30,
-                                    vertical: 20,
+                                    horizontal:
+                                        MediaQuery.of(context).size.width * 0.1,
+                                    vertical:
+                                        MediaQuery.of(context).size.height *
+                                            0.023,
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text(
                                       "Sign In",
                                       style: TextStyle(fontSize: 20),
@@ -66,10 +69,13 @@ class Register extends StatelessWidget {
                                 color: Color(0xffD8D8D8),
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(
-                                    horizontal: 30,
-                                    vertical: 20,
+                                    horizontal:
+                                        MediaQuery.of(context).size.width * 0.1,
+                                    vertical:
+                                        MediaQuery.of(context).size.height *
+                                            0.023,
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text(
                                       "Sign Up",
                                       style: TextStyle(fontSize: 20),
@@ -81,27 +87,27 @@ class Register extends StatelessWidget {
                           ],
                         ),
                         SizedBox(
-                          height: 20,
+                          height: MediaQuery.of(context).size.width * 0.06,
                         ),
                         Column(
                           children: [
                             BoxName(name: 'Your Name'),
                             SizedBox(
-                              height: 15,
+                              height: MediaQuery.of(context).size.width * 0.052,
                             ),
                             BoxName(name: 'enter your email'),
                             SizedBox(
-                              height: 15,
+                              height: MediaQuery.of(context).size.width * 0.052,
                             ),
                             BoxName(name: 'Your Phone number'),
                             SizedBox(
-                              height: 15,
+                              height: MediaQuery.of(context).size.width * 0.04,
                             ),
                             BoxName(name: 'Password'),
                           ],
                         ),
                         SizedBox(
-                          height: 20,
+                          height: MediaQuery.of(context).size.width * 0.045,
                         ),
                         Container(
                           decoration: BoxDecoration(
