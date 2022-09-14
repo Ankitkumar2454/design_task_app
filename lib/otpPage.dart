@@ -8,6 +8,7 @@ class OtpPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Container(
+          height: MediaQuery.of(context).size.height,
           decoration: const BoxDecoration(
             color: Color(0xff410056),
             image: DecorationImage(
@@ -52,7 +53,11 @@ class OtpPage extends StatelessWidget {
                                   child: Center(
                                     child: Text(
                                       "Sign In",
-                                      style: TextStyle(fontSize: 20),
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontFamily: 'Segoe UI',
+                                        fontWeight: FontWeight.w300,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -66,10 +71,14 @@ class OtpPage extends StatelessWidget {
                                     horizontal: 30,
                                     vertical: 20,
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text(
                                       "Sign Up",
-                                      style: TextStyle(fontSize: 20),
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontFamily: 'Segoe UI',
+                                        fontWeight: FontWeight.w500,
+                                      ),
                                     ),
                                   ),
                                 ),

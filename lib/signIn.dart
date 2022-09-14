@@ -29,7 +29,6 @@ class SignIn extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  // height: 80,
                   height: MediaQuery.of(context).size.height * 0.1,
                 ),
                 Padding(
@@ -57,7 +56,10 @@ class SignIn extends StatelessWidget {
                                   child: Center(
                                     child: Text(
                                       "Sign In",
-                                      style: TextStyle(fontSize: 20),
+                                      style: TextStyle(
+                                          fontSize: 20,
+                                          fontFamily: 'Segoe UI',
+                                          fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                 ),
@@ -74,10 +76,14 @@ class SignIn extends StatelessWidget {
                                         MediaQuery.of(context).size.height *
                                             0.023,
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text(
                                       "Sign Up",
-                                      style: TextStyle(fontSize: 20),
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontFamily: 'Segoe UI',
+                                        fontWeight: FontWeight.w300,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -111,12 +117,14 @@ class SignIn extends StatelessWidget {
                           ),
                           height: MediaQuery.of(context).size.height * 0.075,
                           width: MediaQuery.of(context).size.width * 0.4,
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               'Sign In',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 20,
+                                fontFamily: 'Segoe UI',
+                                fontWeight: FontWeight.w500,
                               ),
                             ),
                           ),
@@ -178,10 +186,11 @@ class Box extends StatelessWidget {
           padding: EdgeInsets.all(10.0),
           child: Text(
             name,
-            style: TextStyle(
-              color: Colors.black45,
-              fontSize: 18,
-            ),
+            style: const TextStyle(
+                color: Colors.black45,
+                fontSize: 18,
+                fontFamily: 'Segoe UI',
+                fontWeight: FontWeight.w300),
           ),
         ),
       ),

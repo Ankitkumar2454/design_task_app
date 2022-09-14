@@ -58,7 +58,11 @@ class Register extends StatelessWidget {
                                   child: const Center(
                                     child: Text(
                                       "Sign In",
-                                      style: TextStyle(fontSize: 20),
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontFamily: 'Segoe UI',
+                                        fontWeight: FontWeight.w200,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -78,7 +82,11 @@ class Register extends StatelessWidget {
                                   child: const Center(
                                     child: Text(
                                       "Sign Up",
-                                      style: TextStyle(fontSize: 20),
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontFamily: 'Segoe UI',
+                                        fontWeight: FontWeight.w500,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -160,7 +168,11 @@ class Register extends StatelessWidget {
                                 Text(
                                   'Continue with google',
                                   style: TextStyle(
-                                      color: Colors.black, fontSize: 20),
+                                    color: Color(0xff410056),
+                                    fontSize: 20,
+                                    fontFamily: 'Segoe UI',
+                                    fontWeight: FontWeight.w400,
+                                  ),
                                 ),
                               ],
                             ),
@@ -190,7 +202,11 @@ class Register extends StatelessWidget {
                                 Text(
                                   'Continue with Facebook',
                                   style: TextStyle(
-                                      color: Colors.black, fontSize: 20),
+                                    color: Color(0xff410056),
+                                    fontSize: 20,
+                                    fontFamily: 'Segoe UI',
+                                    fontWeight: FontWeight.w400,
+                                  ),
                                 ),
                               ],
                             ),
@@ -252,6 +268,8 @@ class BoxName extends StatelessWidget {
             style: TextStyle(
               color: Colors.black45,
               fontSize: 20,
+              fontFamily: 'Segoe UI',
+              fontWeight: FontWeight.w200,
             ),
           ),
         ),
